@@ -27,7 +27,7 @@
 ├── test_pic/        # 测试图像文件夹
 ├── results/         # 模型预测结果保存文件夹
 ├── output_results/  # 训练过程中模型和可视化结果保存文件夹
-└── CRACK500/        # CRACK500 数据集文件夹
+└── UAV-Crack-dataset/        # UAV-Crack-dataset 数据集文件夹
 ```
 
 ### 使用方法
@@ -57,7 +57,7 @@ python predict.py --image test_pic/your_image.jpg --model output_results/best_mo
 - `--image`: 输入图像路径
 - `--model`: 模型权重文件路径（默认为 `output_results/best_model.pth`）
 - `--output`: 输出结果保存文件夹（默认为 `results`）
-- `--threshold`: 二值化阈值，范围 0-1（默认为 0.5）
+- `--threshold`: 二值化阈值，范围 0-1（默认为 0.8）
 - `--no-postprocessing`: 禁用后处理操作（默认启用）
 
 #### 预测全部测试图片示例命令
@@ -81,7 +81,7 @@ python predict.py --image test_pic/road2.png --model output_results/best_model.p
 
 1. `{图像名称}_prediction.png`：三联图（原始图像、预测概率图、叠加显示）
 2. `{图像名称}_mask.png`：二值化掩码图像，白色表示裂缝区域
-
+3. 权重文件下载链接：通过网盘分享的文件：HWDU_best_model.pth 链接: https://pan.baidu.com/s/1rOqtQQz4OSCEp6pJLsQBTg?pwd=ad11 提取码: ad11
 ---
 
 ## English Documentation
@@ -110,7 +110,7 @@ Despite these improvements, the model's performance still has room for enhanceme
 ├── test_pic/        # Test image folder
 ├── results/         # Model prediction results storage folder
 ├── output_results/  # Model and visualization results storage folder during training
-└── CRACK500/        # CRACK500 dataset folder
+└── UAV-Crack-dataset/        # UAV-Crack-dataset dataset folder
 ```
 
 ### Usage
